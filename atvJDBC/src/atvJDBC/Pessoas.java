@@ -30,9 +30,9 @@ public class Pessoas {
 
 	public void inserirPessoa(){
 		try {
-			url = "jdbc:mysql://127.0.0.1:3306/?user=Budah";				
-			user = "Budah";			
-			password = "VitorSQLDeusVult";
+			url = JOptionPane.showInputDialog(null, "Digite a url do banco de dados: ", null, 1);				
+			user = JOptionPane.showInputDialog(null, "Digite usuário do banco de dados: ", "Qual o usuário do banco de dados?", 1);					
+			password = JOptionPane.showInputDialog(null, "Digite a senha do usuário: ", null, 1);
 			Class.forName("com.mysql.cj.jdbc.Driver");			
 			conexao = DriverManager.getConnection(url, user, password);
 
@@ -73,9 +73,9 @@ public class Pessoas {
 	public void listarPessoas() {
 
 		try {
-			url = "jdbc:mysql://127.0.0.1:3306/?user=Budah";				
-			user = "Budah";			
-			password = "VitorSQLDeusVult";
+			url = JOptionPane.showInputDialog(null, "Digite a url do banco de dados: ", null, 1);				
+			user = JOptionPane.showInputDialog(null, "Digite usuário do banco de dados: ", "Qual o usuário do banco de dados?", 1);					
+			password = JOptionPane.showInputDialog(null, "Digite a senha do usuário: ", null, 1);
 			Class.forName("com.mysql.cj.jdbc.Driver");			
 			conexao = DriverManager.getConnection(url, user, password);
 			
@@ -110,9 +110,9 @@ public class Pessoas {
 
 	public void removerPessoa() {
 		try {
-			url = "jdbc:mysql://127.0.0.1:3306/?user=Budah";				
-			user = "Budah";			
-			password = "VitorSQLDeusVult";
+			url = JOptionPane.showInputDialog(null, "Digite a url do banco de dados: ", null, 1);				
+			user = JOptionPane.showInputDialog(null, "Digite usuário do banco de dados: ", "Qual o usuário do banco de dados?", 1);					
+			password = JOptionPane.showInputDialog(null, "Digite a senha do usuário: ", null, 1);
 			Class.forName("com.mysql.cj.jdbc.Driver");			
 			conexao = DriverManager.getConnection(url, user, password);
 
@@ -161,9 +161,9 @@ public class Pessoas {
 
 	public void atualizarPessoa() {
 		try {
-			url = "jdbc:mysql://127.0.0.1:3306/?user=Budah";				
-			user = "Budah";			
-			password = "VitorSQLDeusVult";
+			url = JOptionPane.showInputDialog(null, "Digite a url do banco de dados: ", null, 1);				
+			user = JOptionPane.showInputDialog(null, "Digite usuário do banco de dados: ", "Qual o usuário do banco de dados?", 1);					
+			password = JOptionPane.showInputDialog(null, "Digite a senha do usuário: ", null, 1);
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			conexao = DriverManager.getConnection(url, user, password);
 
